@@ -8,6 +8,9 @@ package vehiculo;
 public class Main {
     
       public static void main(String[] args) {
+          /**
+           * introduccion de parametros
+           */
         Vehiculo miVeiculo;
         int stockActual;
         
