@@ -8,14 +8,14 @@ package vehiculo;
 public class Main {
     
       public static void main(String[] args) {
-        VehiculoXXX2223 miVehiculoXXX2223;
+        Vehiculo miVeiculo;
         int stockActual;
         
-        miVehiculoXXX2223 = new VehiculoXXX2223("Seat",18000,100);
+        miVeiculo = new Vehiculo("Seat",18000,100);
         try 
         {
             System.out.println("Venta de Vehiculos");
-            miVehiculoXXX2223.vender(20);
+            miVeiculo.vender(20);
         } catch (Exception e)
         {
             System.out.print("Fallo al vender");
@@ -24,12 +24,12 @@ public class Main {
         try
         {
             System.out.println("Compra de Vehiculos");
-            miVehiculoXXX2223.comprar(100);
+            miVeiculo.comprar(100);
         } catch (Exception e)
         {
             System.out.print("Fallo al comprar");
         }
-        stockActual = miVehiculoXXX2223.obtenerStock();
+        stockActual = miVeiculo.obtenerStock();
         System.out.println("El stock actual es "+ stockActual );
     }
 
